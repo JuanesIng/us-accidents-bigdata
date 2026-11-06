@@ -1,0 +1,10 @@
+{
+  "fuente": "https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents",
+  "licencia": "CC BY-NC-SA 4.0 (verificar en Kaggle)",
+  "fecha_descarga": "2026-11-05 01:33 (hora Colombia)",
+  "archivo_csv": "US_Accidents_March23.csv",
+  "tamano_zip_mb": 653.1,
+  "tamano_csv_mb": 2916.5,
+  "sha256_csv": "e3e9f962e3e2289db1bdce91623abbcf9ba4d7bfc1adb091c8aeee6c2639d204",
+  "tamano_parquet_mb": 763.8
+}

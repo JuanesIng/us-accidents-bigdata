@@ -1,0 +1,52 @@
+state,state_name,region
+CT,Connecticut,Noreste
+ME,Maine,Noreste
+MA,Massachusetts,Noreste
+NH,New Hampshire,Noreste
+RI,Rhode Island,Noreste
+VT,Vermont,Noreste
+NJ,New Jersey,Noreste
+NY,New York,Noreste
+PA,Pennsylvania,Noreste
+IL,Illinois,Medio Oeste
+IN,Indiana,Medio Oeste
+MI,Michigan,Medio Oeste
+OH,Ohio,Medio Oeste
+WI,Wisconsin,Medio Oeste
+IA,Iowa,Medio Oeste
+KS,Kansas,Medio Oeste
+MN,Minnesota,Medio Oeste
+MO,Missouri,Medio Oeste
+NE,Nebraska,Medio Oeste
+ND,North Dakota,Medio Oeste
+SD,South Dakota,Medio Oeste
+DE,Delaware,Sur
+FL,Florida,Sur
+GA,Georgia,Sur
+MD,Maryland,Sur
+NC,North Carolina,Sur
+SC,South Carolina,Sur
+VA,Virginia,Sur
+DC,District of Columbia,Sur
+WV,West Virginia,Sur
+AL,Alabama,Sur
+KY,Kentucky,Sur
+MS,Mississippi,Sur
+TN,Tennessee,Sur
+AR,Arkansas,Sur
+LA,Louisiana,Sur
+OK,Oklahoma,Sur
+TX,Texas,Sur
+AZ,Arizona,Oeste
+CO,Colorado,Oeste
+ID,Idaho,Oeste
+MT,Montana,Oeste
+NV,Nevada,Oeste
+NM,New Mexico,Oeste
+UT,Utah,Oeste
+WY,Wyoming,Oeste
+AK,Alaska,Oeste
+CA,California,Oeste
+HI,Hawaii,Oeste
+OR,Oregon,Oeste
+WA,Washington,Oeste

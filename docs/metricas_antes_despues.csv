@@ -1,0 +1,11 @@
+metrica,antes,despues
+Filas,7728394,7240402
+Columnas,46,48
+Columnas de tipo texto,46,15
+Fechas con formato no estándar,743166,0
+Filas duplicadas (mismo evento),487992,0
+Valores fuera de límite físico,10761,0
+Duraciones mayores a 7 días,6824,0
+Códigos postales no estándar,2268268,0
+Categorías de dirección del viento,24,18
+Categorías de condición climática,144,7

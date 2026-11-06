@@ -1,0 +1,49 @@
+columna,tipo,descripcion,ejemplo,regla_transformacion
+id,string,Identificador único del accidente,A-757745,Sin cambios
+source,string,Proveedor de API que reportó el accidente,Source2,Sin cambios
+severity,int,"Severidad del impacto en el tráfico (1 = bajo, 4 = alto)",3,Cast a entero
+is_severe,boolean,Accidente grave (severidad 3 o 4),True,Derivada de severity
+start_time,timestamp,Inicio del accidente (hora local),2022-01-01 00:06:13,Primeros 19 caracteres → timestamp
+end_time,timestamp,Fin del impacto en el tráfico (hora local),2022-01-01 00:35:53,Primeros 19 caracteres → timestamp
+duration_min,double,Duración del impacto en minutos,29.7,end_time − start_time; > 7 días → nulo
+month,int,Mes del accidente,1,Derivada de start_time
+day_of_week,int,Día de la semana (1 = lunes … 7 = domingo),6,Derivada de start_time
+day_name,string,Nombre del día en español,Sábado,Derivada de day_of_week
+hour,int,Hora del día (0–23),0,Derivada de start_time
+is_partial_year,boolean,Año con datos incompletos (2023: enero–marzo),False,Derivada de year
+start_lat,double,Latitud del inicio del accidente,42.066635,Cast a double; fuera de 24–50 → nulo
+start_lng,double,Longitud del inicio del accidente,-88.14413499999998,Cast a double; fuera de −125 a −66 → nulo
+distance_km,double,Longitud de vía afectada (km),0.0,"mi × 1,609; > 100 mi → nulo"
+street,string,Calle,I-90 W,Trim
+city,string,Ciudad,Hoffman Estates,Trim
+county,string,Condado,Cook,Trim
+state,string,Código del estado (2 letras),IL,Trim
+zipcode,string,Código postal de 5 dígitos,60192,ZIP+4 → 5 primeros dígitos
+timezone,string,Zona horaria,US/Central,Trim
+airport_code,string,Estación meteorológica (aeropuerto) más cercana,KDPA,Trim
+weather_timestamp,timestamp,Hora de la observación del clima,2022-01-01 00:24:00,Primeros 19 caracteres → timestamp
+temperature_c,double,Temperatura (°C),1.1,(°F − 32) × 5/9; fuera de −50 a 130 °F → nulo
+humidity_pct,double,Humedad relativa (%),92.0,Cast a double; fuera de 0–100 → nulo
+pressure_hpa,double,Presión atmosférica (hPa),979.0,"inHg × 33,86; fuera de 20–32 inHg → nulo"
+visibility_km,double,Visibilidad (km),3.22,"mi × 1,609; > 20 mi → nulo"
+wind_direction,string,"Dirección del viento (16 rumbos, Calm, Variable)",N,Unificación de variantes
+wind_speed_kmh,double,Velocidad del viento (km/h),24.1,"mph × 1,609; > 150 mph → nulo"
+precipitation_mm,double,Precipitación (mm),0.0,"in × 25,4; > 10 in → nulo; nulos se conservan"
+weather_condition,string,Condición climática original,Fog,Trim
+weather_group,string,Grupo de condición climática (7 grupos),Niebla/Humo/Polvo,Reglas por palabras clave
+is_windy,boolean,La condición climática menciona viento,False,Derivada de weather_condition
+amenity,boolean,Hay servicio público (amenity) cerca del accidente,False,"""True""/""False"" → booleano"
+bump,boolean,Hay reductor de velocidad cerca del accidente,False,"""True""/""False"" → booleano"
+crossing,boolean,Hay cruce peatonal cerca del accidente,True,"""True""/""False"" → booleano"
+give_way,boolean,Hay señal de ceda el paso cerca del accidente,False,"""True""/""False"" → booleano"
+junction,boolean,Hay intersección o salida cerca del accidente,False,"""True""/""False"" → booleano"
+no_exit,boolean,Hay vía sin salida cerca del accidente,False,"""True""/""False"" → booleano"
+railway,boolean,Hay paso férreo cerca del accidente,False,"""True""/""False"" → booleano"
+roundabout,boolean,Hay glorieta cerca del accidente,False,"""True""/""False"" → booleano"
+station,boolean,Hay estación cerca del accidente,False,"""True""/""False"" → booleano"
+stop,boolean,Hay señal de pare cerca del accidente,False,"""True""/""False"" → booleano"
+traffic_calming,boolean,Hay elemento de pacificación del tráfico cerca del accidente,False,"""True""/""False"" → booleano"
+traffic_signal,boolean,Hay semáforo cerca del accidente,True,"""True""/""False"" → booleano"
+sunrise_sunset,string,Día o noche según la posición del sol,Night,Sin cambios
+civil_twilight,string,Día o noche según el crepúsculo civil,Night,Sin cambios
+year,int,Año del accidente (partición),2022,Derivada de start_time

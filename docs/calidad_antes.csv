@@ -1,0 +1,47 @@
+columna,tipo_esperado,nulos,nulos_pct,tipo_incorrecto,distintos_aprox,ejemplo,atipicos_iqr,fuera_limite_fisico,limite_fisico
+id,string,0,0.0,0,7390017,A-5829313,,,
+source,string,0,0.0,0,3,Source1,,,
+severity,int,0,0.0,0,4,2,1571413.0,0.0,1 a 4
+start_time,timestamp,0,0.0,0,6324316,2021-03-09 15:33:30,,,
+end_time,timestamp,0,0.0,0,6874711,2021-03-09 16:51:30,,,
+start_lat,double,0,0.0,0,2449093,25.913224,0.0,0.0,24 a 50
+start_lng,double,0,0.0,0,2576246,-80.336809,0.0,0.0,-125 a -66
+end_lat,double,3402762,44.03,0,1558740,25.913248,0.0,0.0,24 a 50
+end_lng,double,3402762,44.03,0,1634425,-80.335034,0.0,0.0,-125 a -66
+distance_mi,double,0,0.0,0,21965,0.11,970923.0,86.0,0 a 100
+description,string,5,0.0,0,3928694,Incident on NW 154TH ST near NW 84TH BLK,,,
+street,string,10869,0.14,0,340065, NW 154th St,,,
+city,string,253,0.0,0,13769,Hialeah,,,
+county,string,0,0.0,0,1926,Miami-Dade,,,
+state,string,0,0.0,0,52,FL,,,
+zipcode,string,1915,0.02,0,823900,33016,,,
+country,string,0,0.0,0,1,US,,,
+timezone,string,7808,0.1,0,4,US/Eastern,,,
+airport_code,string,22635,0.29,0,1909,KOPF,,,
+weather_timestamp,timestamp,120228,1.56,0,931176,2021-03-09 15:53:00,,,
+temperature_f,double,163853,2.12,0,821,71.0,50515.0,66.0,-50 a 130
+wind_chill_f,double,1999019,25.87,0,1012,71.0,40109.0,41.0,-80 a 130
+humidity_pct,double,174144,2.25,0,100,49.0,0.0,0.0,0 a 100
+pressure_in,double,140679,1.82,0,1124,30.34,429613.0,451.0,20 a 32
+visibility_mi,double,177098,2.29,0,95,10.0,1481065.0,10047.0,0 a 20
+wind_direction,string,175206,2.27,0,22,ENE,,,
+wind_speed_mph,double,571233,7.39,0,186,18.0,210603.0,51.0,0 a 150
+precipitation_in,double,2203586,28.51,0,296,0.0,533090.0,60.0,0 a 10
+weather_condition,string,173459,2.24,0,153,Mostly Cloudy,,,
+amenity,boolean,0,0.0,0,2,False,,,
+bump,boolean,0,0.0,0,2,False,,,
+crossing,boolean,0,0.0,0,2,False,,,
+give_way,boolean,0,0.0,0,2,False,,,
+junction,boolean,0,0.0,0,2,False,,,
+no_exit,boolean,0,0.0,0,2,False,,,
+railway,boolean,0,0.0,0,2,False,,,
+roundabout,boolean,0,0.0,0,2,False,,,
+station,boolean,0,0.0,0,2,False,,,
+stop,boolean,0,0.0,0,2,False,,,
+traffic_calming,boolean,0,0.0,0,2,False,,,
+traffic_signal,boolean,0,0.0,0,2,False,,,
+turning_loop,boolean,0,0.0,0,1,False,,,
+sunrise_sunset,string,23246,0.3,0,2,Day,,,
+civil_twilight,string,23246,0.3,0,2,Day,,,
+nautical_twilight,string,23246,0.3,0,2,Day,,,
+astronomical_twilight,string,23246,0.3,0,2,Day,,,
